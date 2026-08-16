@@ -39,7 +39,6 @@ jobs:
 
       - name: Run Tests
         run: ./node_modules/.bin/turbo run test
-        continue-on-error: true
 
   build-action:
     runs-on: ubuntu-latest

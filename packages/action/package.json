@@ -4,6 +4,7 @@
   "description": "Hawk GitHub Action — AI code review in your CI pipeline",
   "main": "dist/index.js",
   "scripts": {
+    "prebuild": "npm run build --workspace=@hawk/core",
     "build": "ncc build src/index.ts --source-map --license licenses.txt"
   },
   "dependencies": {
